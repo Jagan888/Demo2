@@ -17,15 +17,20 @@ export class EmployeesComponent {
   form: FormGroup ;
   createNewUser: any;
 
+  user:any;
 
 onSubmit() {
   const userData = this.service.form.value;
   this.service.createNewUser(userData);
 }
 
-onClick(){
-  const fname = this.service.form.value;
-  this.service.getUser(fname);
+onClick(FullName){
+  this.user=this.service.getUser(FullName);
+  console.log(this.user)
+}
+
+AddEmployees(FName,LName,Age,Loc,Eid){
+  this.service.AddEmployee(FName,LName,Age,Loc,Eid);
 }
 
 }

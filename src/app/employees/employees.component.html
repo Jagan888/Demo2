@@ -21,13 +21,105 @@
             required
             class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             placeholder="Name"
-            [formControlName]="'FullName'"
+            #FullName
           />
         </div>
 <div>
         <button
-
           type="submit"
-          (click)="onClick()"
+          (click)="onClick(FullName.value)"
           class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >Click</button>
+</div>
+
+
+<div>
+          <label for="Name" class="sr-only">First Name</label>
+          <input
+            id="Name"
+            name="Name"
+            type="Name"
+            autocomplete="Name"
+            required
+            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="Name"
+            #FName
+          />
+        </div>
+        <div>
+          <label for="Name" class="sr-only">Last Name</label>
+          <input
+            id="Name"
+            name="Name"
+            type="Name"
+            autocomplete="Name"
+            required
+            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="Name"
+            #LName
+          />
+        </div>
+        <div>
+          <label for="Name" class="sr-only">Age</label>
+          <input
+            id="Name"
+            name="Name"
+            type="Name"
+            autocomplete="Name"
+            required
+            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="Name"
+            #Age
+          />
+        </div>
+        <div>
+          <label for="Name" class="sr-only">Location</label>
+          <input
+            id="Name"
+            name="Name"
+            type="Name"
+            autocomplete="Name"
+            required
+            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="Name"
+            #Loc
+          />
+        </div>
+        <div>
+          <label for="Name" class="sr-only">Email</label>
+          <input
+            id="Name"
+            name="Name"
+            type="Name"
+            autocomplete="Name"
+            required
+            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="Name"
+            #Eid
+          />
+        </div>
+
+
+        <label for="Name" class="sr-only">Project Name</label>
+          <input
+            id="Name"
+            name="Name"
+            type="Name"
+            autocomplete="Name"
+            required
+            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="Project Name"
+            #PName
+          />
+<div>
+        <button
+
+          type="submit"
+          (click)="AddEmployees(FName.value,LName.value,Age.value,Loc.value,Eid.value)"
+          class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >Add Employees</button>
+</div>
+
+<div>
+  
+</div>

@@ -1,3 +1,7 @@
 export interface User {
-  ename: string;
+  FName: string;
+  LName: any;
+  Age: any;
+  eid: any;
+  Loc: any;
 }
